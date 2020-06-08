@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block title %}Contact us{% endblock title %}
+{% block body %}<div class="jumbotron">
+  <h1 class="display-4">Ayurvedic</h1>
+  <p class="lead">Ayurvedic medicine (“Ayurveda” for short) is one of the world's oldest holistic (“whole-body”) healing systems. It was developed more than 3,000 years ago in India.
+</p>
+  <hr class="my-4">
+  <p>It’s based on the belief that health and wellness depend on a delicate balance between the mind, body, and spirit. Its main goal is to promote good health, not fight disease. But treatments may be geared toward specific health problems.
+</p>
+<p>In the United States, it’s considered a form of complementary and alternative medicine (CAM).
+
+    Ayurveda and Your Life Energy
+    Students of CAM therapy believe that everything in the universe – dead or alive – is connected. If your mind, body, and spirit are in harmony with the universe, you have good health. When something disrupts this balance, you get sick. Among the things that can upset this balance are genetic or birth defects, injuries, climate and seasonal change, age, and your emotions.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+<div class="container">
+<form class="form-horizontal" method="POST" action="/contact">
+   {% csrf_token %} 
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="name">Name:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="phone_no">Phone no:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="phone_no" name="phone_no" placeholder="Enter phone no">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="desc">Description:</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" rows="4" cols="5" id="desc" name="desc" placeholder="Enter description"> </textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10 text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+</div>
+{% endblock body %}
+ 
+
+
+
+
+
+
+

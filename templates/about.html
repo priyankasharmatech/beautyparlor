@@ -1,0 +1,31 @@
+ {% extends 'base.html' %}
+
+  {% block title %} about {% endblock title %}
+{% block style %}
+ {% comment %} is block ka usage samjhe aapp ki nahiKC nai aaya s smjh gai ab {% endcomment %}
+     
+    .the-div {
+    {% comment %} background: linear-gradient(to right, transparent, mistyrose),url("/static/4.jpg"); {% endcomment %}
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            border-radius:10px;
+    }
+
+{% comment %} mai jo data base usekarunga usko aapkokaha change karna hai wo dekho bus lekin mysql run karna hoga uske liye thoda slow hoga lekin jaana jaruri hai keval connection ke term mai ok ha {% endcomment %}
+   
+{% endblock style %}
+
+ {% block body %} 
+ <div class="container the-div">
+<p><h3>Hair Style salon bootstrap template is a stylish and trendy bootstrap theme  for the beauty salon professional website. Therefore this is a clean and modern   HTML5  based template to use for showcase your business services and products,  corporate, business, portfolio, and many more. This template is  built  using the latest  Bootstrap 4 with <a href="https://webthemez.com/free-html5-templates/">HTML5 </a>and    css3 which easy to customize the theme as per the requirements. This    template designed with height quality standards to meet the latest    requirement and it is a <a href="https://webthemez.com/responsive-website/">responsive template</a> fits in all devices with multi-browser support.   </h3></p>
+ <h1>Key features</h1>
+ <p><h3>Twitter <a href="http://getbootstrap.com/">Bootstrap 4+</a>
+  <br>Clean &amp; Developer-friendly HTML5 and CSS3 code
+  <br>100% Responsive Layout Design<br>Multipurpose theme<br>
+  <a href="https://fonts.google.com/">Google </a>Fonts Support
+  <br>Font Awesome<br>Gallery Section Lightbox<br>Smooth Scrolling<br>Full Customization<br>Camera Carousal<br>Vector Illustrations<br>Working Contact Form </h3>   </p> 
+  </div>
+  {% endblock body %}
+
+ 
